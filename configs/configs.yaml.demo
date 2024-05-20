@@ -1,0 +1,52 @@
+LLM:
+  llm_config_path:  ************
+  model_selected: chatglm_turbo
+
+Storage:
+  storage_path_base: ************\storage
+
+DB:
+  config_path: ************\db_config.yaml
+
+Youtube:
+  search_params:
+    upload_time:
+      PastOneHour: '过去 1 小时'
+      Today: '今天'
+      ThisWeek: '本周'
+      ThisMonth: '本月'
+      ThisYear: '今年'
+    video_type:
+      Video: '视频'
+      Channel: '频道'
+      PlayList: '播放列表'
+      Film: '电影'
+    video_duration:
+      BelowFourMins: '4 分钟以下'
+      FourToTwentyMins: '4 - 20 分钟'
+      AboveTwentyMins: '20 分钟以上'
+    Functionality:
+      WithSubtitle: '字幕'
+    RankOrder:
+      Relation: '相关程度'
+      UploadTime: '上传日期'
+      Views: '观看次数'
+      Score: '评分'
+
+environment:
+  default_chromedriver_path: ************\chromedriver.exe
+  default_chromedriver_version: 119
+  cookie_storage_path: ************\storage\__cookies__
+
+runtime_settings:
+  global_time_wait: 5
+  default_chrome_download_path: ************\storage
+  if_headless: false
+
+endpoints:
+  youtube: https://www.youtube.com
+
+accounts:
+  youtube:
+    account_name: ************
+    password: ************
